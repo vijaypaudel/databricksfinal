@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Salary Prediction</title>
+  </head>
+  <body background="static\EMP.jpg">
+
+    <center>
+
+        <h1> Salary Prediction </h1><br>
+
+
+<form class="" action="{{url_for('predict')}}" method="post">
+
+   Experiance : <br> <input type="text", name='Experiance', placeholder="Experiance"> <br><br>
+      Test_score :  <br> <input type="text", name='Test_score', placeholder="Test_score"> <br><br>
+ Interview_score :  <br> <input type="text", name='Interview_score', placeholder="Interview_score"> <br><br>
+  <input type="submit" , value='predict' >
+
+
+
+</form>
+{{data}}
+</center>
+
+
+
+  </body>
+</html>
